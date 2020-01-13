@@ -39,7 +39,6 @@ public class SplashActivity extends AppCompatActivity {
     private void gotoMain(){
         startActivity(new Intent(SplashActivity.this, MainActivity.class));
         finish();
-        //overridePendingTransition(R.anim.bounce,R.anim.fadeout);
     }
 
 }
