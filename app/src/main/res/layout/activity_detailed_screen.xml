@@ -17,7 +17,8 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="8dp">
+            android:layout_marginLeft="8dp"
+            android:padding="8dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/inner"
@@ -92,7 +93,8 @@
                 android:textStyle="bold"
                 android:layout_marginTop="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"/>
+                android:layout_marginLeft="8dp"
+                />
 
 
 
@@ -117,5 +119,6 @@
             android:layout_height="match_parent"
             android:scaleType="centerCrop"/>
     </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

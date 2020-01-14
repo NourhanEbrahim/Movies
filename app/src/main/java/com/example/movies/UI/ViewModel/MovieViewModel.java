@@ -16,7 +16,10 @@ public class MovieViewModel extends ViewModel {
 
     public MutableLiveData<MoviesModel> moviepostmutableLiveData = new MutableLiveData<>();
 
-    public void getPopularMovies(String pageNum) {
+    public void getPopularMovies() {
+        for (int i = 1; i <= 500; i++) {
+            String pageNum = i + "";
+
             MovieDB.getINSTANCE().getMovies(pageNum).enqueue(new Callback<MoviesModel>() {
                 @Override
                 public void onResponse(Call<MoviesModel> call, Response<MoviesModel> response) {
@@ -28,6 +31,6 @@ public class MovieViewModel extends ViewModel {
                     System.out.println("there is error : " + t);
                 }
             });
-
+        }
     }
 }

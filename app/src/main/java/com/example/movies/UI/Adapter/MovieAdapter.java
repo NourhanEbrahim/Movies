@@ -25,7 +25,7 @@ import java.util.List;
 public class MovieAdapter extends ArrayAdapter<ResultsModel> {
 
     private static Context context;
-    private List<ResultsModel> movies = new ArrayList<>();
+    public List<ResultsModel> movies = new ArrayList<>();
 
 
     public MovieAdapter(@NonNull Context context) {

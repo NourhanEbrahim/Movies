@@ -30,10 +30,8 @@ public class MainActivity extends AppCompatActivity {
         gridView = findViewById(R.id.grid);
 
         movieViewModel = ViewModelProviders.of(this).get(MovieViewModel.class);
-        for (int i = 1; i <= 500; i++) {
-            String pageNum = i + "";
-            movieViewModel.getPopularMovies(pageNum);
-        }
+
+        movieViewModel.getPopularMovies();
 
         final MovieAdapter movieAdapter = new MovieAdapter(this);
         gridView.setAdapter(movieAdapter);
