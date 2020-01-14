@@ -16,7 +16,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginLeft="8dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -84,11 +84,11 @@
             <TextView
                 android:id="@+id/overview"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 app:layout_constraintTop_toBottomOf="@id/inner"
                 app:layout_constraintStart_toStartOf="parent"
                 android:text="overview : "
-                android:textSize="15sp"
+                android:textSize="25sp"
                 android:textStyle="bold"
                 android:layout_marginTop="8dp"
                 android:layout_marginStart="8dp"
